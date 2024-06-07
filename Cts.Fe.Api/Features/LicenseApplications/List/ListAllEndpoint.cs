@@ -11,8 +11,6 @@ sealed class ListAllEndpoint : Endpoint<ListAllRequest, Result<ListAllResponse>>
     {
         _licenseAppService = LicenseAppService;
     }
-
-    //public LicenseAppService LicenseAppService { get; set; }
     
     public override void Configure()
     {

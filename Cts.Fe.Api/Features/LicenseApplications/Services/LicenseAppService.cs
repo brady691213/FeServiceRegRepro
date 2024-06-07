@@ -10,10 +10,10 @@ namespace Cts.Fe.Features.LicenseApplications;
 public class LicenseAppService : ILicenseAppService
 {
     private readonly IConfiguration _configuration;
-    private readonly CTSDBContext _dbContext;
+    private readonly ExternalDBContext _dbContext;
     private readonly LicenseAppDomainMapper _mapper;
 
-    public LicenseAppService(IConfiguration configuration, CTSDBContext dbContext, LicenseAppDomainMapper mapper)
+    public LicenseAppService(IConfiguration configuration, ExternalDBContext dbContext, LicenseAppDomainMapper mapper)
     {
         _configuration = configuration;
         _dbContext = dbContext;

@@ -6,8 +6,8 @@ namespace Cts.Fe.Infrastructure;
 /// <summary>
 /// This is decompiled just for this repro from an externally developed libary I cannot include for NDA reasons. 
 /// </summary>
-public class CTSDBContext: DbContext
+public class ExternalDBContext: DbContext
 {
-    public virtual DbSet<LicenseApplicationIndex> LicenseApplicationIndices { get; set; }
+    public virtual DbSet<LicenseApp> LicenseApplicationIndices { get; set; }
 
 }

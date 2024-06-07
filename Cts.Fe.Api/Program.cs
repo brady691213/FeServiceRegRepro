@@ -3,10 +3,8 @@ using Cts.Fe.System;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<CTSDBContext>();
-
+builder.Services.AddDbContext<ExternalDBContext>();
 builder.Services.AddFastEndpoints();
-
 if (!builder.Environment.IsProduction())
 {
     builder.Services.AddSwaggerDocument();

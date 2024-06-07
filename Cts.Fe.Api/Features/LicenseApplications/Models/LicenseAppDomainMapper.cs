@@ -7,6 +7,6 @@ namespace Cts.Fe.Features.LicenseApplications.Models;
 [RegisterService<LicenseAppDomainMapper>(LifeTime.Scoped)]
 public partial class LicenseAppDomainMapper
 {
-    [MapProperty(nameof(LicenseApplicationIndex.Assigendtoname), nameof(LicenseAppListItem.AssignedToName))]
-    public partial List<LicenseAppListItem> EntityToListItem(List<LicenseApplicationIndex> list);
+    [MapProperty(nameof(LicenseApp.Assigendtoname), nameof(LicenseAppListItem.AssignedToName))]
+    public partial List<LicenseAppListItem> EntityToListItem(List<LicenseApp> list);
 }
